@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "poll": 2000, 
             "outputPath": "dist/study-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -58,7 +59,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "study-angular:build"
+            "browserTarget": "study-angular:build",
+            "host": "0.0.0.0"
           },
           "configurations": {
             "production": {
