@@ -1,3 +1,4 @@
-<p>
-  list-cars works!
-</p>
+<div *ngIf="!cars">Não achamos nenhum carro!</div>
+<div *ngFor="let car of cars">
+  <p>Model: {{car.model}}</p>
+</div>
