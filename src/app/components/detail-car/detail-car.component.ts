@@ -8,7 +8,7 @@ import { Car } from '../../models/car';
 })
 export class DetailCarComponent implements OnInit {
 
-  @Input('car') car: Car
+  @Input('car') car: Car;
 
   constructor() { }
 

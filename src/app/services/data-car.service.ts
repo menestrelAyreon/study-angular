@@ -24,4 +24,10 @@ export class DataCarService {
   getCars(): Car[] {
     return this.cars;
   }
+
+  getCar(id: number): Car {
+    //let car = this.cars.find( (value: Car) => value.id === id? true: false );
+    //console.log(car);
+    return this.cars.find( (value: Car) => value.id === id? true: false );
+  }
 }

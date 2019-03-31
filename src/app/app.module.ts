@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ListCarsComponent } from './components/list-cars/list-cars.component';
 import { DetailCarComponent } from './components/detail-car/detail-car.component';
+import { DetailPageComponent } from './components/detail-page/detail-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ListCarsComponent,
-    DetailCarComponent
+    DetailCarComponent,
+    DetailPageComponent
     
   ],
   imports: [

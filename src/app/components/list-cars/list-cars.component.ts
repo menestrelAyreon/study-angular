@@ -9,7 +9,7 @@ import { DataCarService } from '../../services/data-car.service';
 })
 export class ListCarsComponent implements OnInit {
 
-  cars: Car[]
+  cars: Car[];
 
   constructor(
     private dataCarService: DataCarService
