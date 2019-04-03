@@ -1,0 +1,5 @@
+<div *ngIf="!cars">Não achamos nenhum carro!</div>
+<div *ngFor="let car of cars">
+  <p>Carro id: {{car.id}}, model: {{car.model}} </p>
+  <a [routerLink]="['/car', car.id]">Detail</a> 
+</div>

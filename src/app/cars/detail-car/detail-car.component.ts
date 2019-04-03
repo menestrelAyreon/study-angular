@@ -1,19 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { DataCarService } from '../../services/data-car.service';
-import { Car } from '../../models/car';
-
+import { DataCarService } from '../data-car.service';
+import { Car } from '../car';
 
 @Component({
-  selector: 'app-detail-page',
-  templateUrl: './detail-page.component.html',
-  styleUrls: ['./detail-page.component.css']
+  selector: 'app-detail-car',
+  templateUrl: './detail-car.component.html',
+  styleUrls: ['./detail-car.component.css']
 })
-export class DetailPageComponent implements OnInit {
+export class DetailCarComponent implements OnInit {
 
 
-  car?: Car;
-  
+  car?: Car;  
 
   constructor(
     private route: ActivatedRoute,
